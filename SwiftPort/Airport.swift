@@ -16,4 +16,12 @@ class Airport {
     init(hangarCapacity: Int) {
         self.hangarCapacity = hangarCapacity
     }
+    
+    func land(plane: Plane) {
+        self.hangar.append(plane)
+    }
+    
+    func hasInItsHangar(plane: Plane) -> Bool {
+        return true
+    }
 }
