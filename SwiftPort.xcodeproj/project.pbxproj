@@ -13,6 +13,8 @@
 		499773F822332999009F5E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499773F722332999009F5E6A /* Assets.xcassets */; };
 		499773FB22332999009F5E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499773F922332999009F5E6A /* LaunchScreen.storyboard */; };
 		4997740622332999009F5E6A /* SwiftPortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997740522332999009F5E6A /* SwiftPortTests.swift */; };
+		4997741122332B55009F5E6A /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997741022332B55009F5E6A /* Airport.swift */; };
+		4997741322332C22009F5E6A /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997741222332C22009F5E6A /* Plane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		4997740122332999009F5E6A /* SwiftPortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4997740522332999009F5E6A /* SwiftPortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPortTests.swift; sourceTree = "<group>"; };
 		4997740722332999009F5E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4997741022332B55009F5E6A /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		4997741222332C22009F5E6A /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				499773F722332999009F5E6A /* Assets.xcassets */,
 				499773F922332999009F5E6A /* LaunchScreen.storyboard */,
 				499773FC22332999009F5E6A /* Info.plist */,
+				4997741022332B55009F5E6A /* Airport.swift */,
+				4997741222332C22009F5E6A /* Plane.swift */,
 			);
 			path = SwiftPort;
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4997741122332B55009F5E6A /* Airport.swift in Sources */,
 				499773F322332998009F5E6A /* ViewController.swift in Sources */,
+				4997741322332C22009F5E6A /* Plane.swift in Sources */,
 				499773F122332998009F5E6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
