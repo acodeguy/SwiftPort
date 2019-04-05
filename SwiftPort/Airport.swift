@@ -18,7 +18,9 @@ class Airport {
     }
     
     func land(plane: Plane) {
-        self.hangar.append(plane)
+        if self.hangar.count < self.hangarCapacity {
+            self.hangar.append(plane)
+        }
     }
     
     func takeOff(plane: Plane) {

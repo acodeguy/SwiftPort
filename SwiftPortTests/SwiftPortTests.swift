@@ -38,5 +38,14 @@ class SwiftPortTests: XCTestCase {
         airport.takeOff(plane: plane)
         XCTAssertFalse(airport.hasInItsHangar(plane: plane))
     }
+    
+    func testPlaneCannotLandIfHangarIsFull() {
+        let planeOne = Plane()
+        let planeTwo = Plane()
+        let fullAirport = Airport(hangarCapacity: 1)
+        fullAirport.land(plane: planeOne)
+        fullAirport.land(plane: planeTwo)
+        XCTAssertFalse(fullAirport.hasInItsHangar(plane: planeTwo))
+    }
 
 }
