@@ -21,7 +21,13 @@ class Airport {
         self.hangar.append(plane)
     }
     
+    func takeOff(plane: Plane) {
+        if let planeIndex = hangar.firstIndex(where: { $0 === plane }) {
+            self.hangar.remove(at: planeIndex)
+        }
+    }
+    
     func hasInItsHangar(plane: Plane) -> Bool {
-        return true
+        return self.hangar.contains { $0 === plane }
     }
 }
