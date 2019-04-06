@@ -12,9 +12,11 @@ class Airport {
     
     var hangar = [Plane]()
     var hangarCapacity = 5
+    var weather = Weather()
     
-    init(hangarCapacity: Int) {
+    init(hangarCapacity: Int, weatherConditions: String) {
         self.hangarCapacity = hangarCapacity
+        self.weather.setWeather(conditions: weatherConditions)
     }
     
     func land(plane: Plane) {
@@ -25,7 +27,9 @@ class Airport {
     
     func takeOff(plane: Plane) {
         if let planeIndex = hangar.firstIndex(where: { $0 === plane }) {
-            self.hangar.remove(at: planeIndex)
+            if self.weather.getWeather() == "sunny" {
+                self.hangar.remove(at: planeIndex)
+            } 
         }
     }
     

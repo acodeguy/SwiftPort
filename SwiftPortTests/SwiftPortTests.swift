@@ -11,7 +11,7 @@ import XCTest
 
 class SwiftPortTests: XCTestCase {
     
-    var airport = Airport(hangarCapacity: 5)
+    var airport = Airport(hangarCapacity: 5, weatherConditions: "sunny")
 
     override func setUp() {
         
@@ -42,10 +42,18 @@ class SwiftPortTests: XCTestCase {
     func testPlaneCannotLandIfHangarIsFull() {
         let planeOne = Plane()
         let planeTwo = Plane()
-        let fullAirport = Airport(hangarCapacity: 1)
+        let fullAirport = Airport(hangarCapacity: 1, weatherConditions: "sunny")
         fullAirport.land(plane: planeOne)
         fullAirport.land(plane: planeTwo)
         XCTAssertFalse(fullAirport.hasInItsHangar(plane: planeTwo))
+    }
+    
+    func testPlaneCannotTakeOffDuringAStorm() {
+        let plane = Plane()
+        let stormyAirport = Airport(hangarCapacity: 1, weatherConditions: "stormy")
+        stormyAirport.land(plane: plane)
+        stormyAirport.takeOff(plane: plane)
+        XCTAssertTrue(stormyAirport.hasInItsHangar(plane: plane))
     }
 
 }
