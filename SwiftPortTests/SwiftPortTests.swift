@@ -50,10 +50,18 @@ class SwiftPortTests: XCTestCase {
     
     func testPlaneCannotTakeOffDuringAStorm() {
         let plane = Plane()
-        let stormyAirport = Airport(hangarCapacity: 1, weatherConditions: "stormy")
+        let stormyAirport = Airport(hangarCapacity: 1, weatherConditions: "sunny")
         stormyAirport.land(plane: plane)
+        stormyAirport.weather.setWeather(newCondition: "stormy")
         stormyAirport.takeOff(plane: plane)
         XCTAssertTrue(stormyAirport.hasInItsHangar(plane: plane))
+    }
+    
+    func testPlaneCannotLandDuringAStorm() {
+        let plane = Plane()
+        let stormyAirport = Airport(hangarCapacity: 1, weatherConditions: "stormy")
+        stormyAirport.land(plane: plane)
+        XCTAssertFalse(stormyAirport.hasInItsHangar(plane: plane))
     }
 
 }

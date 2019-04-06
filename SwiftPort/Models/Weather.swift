@@ -19,4 +19,8 @@ class Weather {
     func getWeather() -> String {
         return self.conditions
     }
+    
+    func setWeather(newCondition: String) {
+        self.conditions = newCondition
+    }
 }

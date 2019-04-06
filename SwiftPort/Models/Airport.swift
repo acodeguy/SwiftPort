@@ -21,7 +21,9 @@ class Airport {
     
     func land(plane: Plane) {
         if self.hangar.count < self.hangarCapacity {
-            self.hangar.append(plane)
+            if self.weather.getWeather() == "sunny" {
+                self.hangar.append(plane)
+            }
         }
     }
     
