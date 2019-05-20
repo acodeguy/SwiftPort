@@ -1,5 +1,5 @@
 //
-//  SwiftPortTests.swift
+//  AirportTests.swift
 //  SwiftPortTests
 //
 //  Created by Andrew on 08/03/2019.
@@ -9,17 +9,9 @@
 import XCTest
 @testable import SwiftPort
 
-class SwiftPortTests: XCTestCase {
+class AirportTests: XCTestCase {
     
     var airport = Airport(hangarCapacity: 5, weatherConditions: "sunny")
-
-    override func setUp() {
-        
-    }
-
-    override func tearDown() {
-        
-    }
 
     func testAnAirportHasAHangarOfAGivenCapacity() {
         XCTAssertEqual(airport.hangarCapacity, 5)
@@ -63,5 +55,4 @@ class SwiftPortTests: XCTestCase {
         stormyAirport.land(plane: plane)
         XCTAssertFalse(stormyAirport.hasInItsHangar(plane: plane))
     }
-
 }

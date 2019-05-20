@@ -10,14 +10,14 @@
 		4917D34622930E98009BF1F5 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997741222332C22009F5E6A /* Plane.swift */; };
 		4917D34722930E9B009BF1F5 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997741022332B55009F5E6A /* Airport.swift */; };
 		4917D34822930E9E009BF1F5 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498308232258E494006C4837 /* Weather.swift */; };
-		4997740622332999009F5E6A /* SwiftPortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997740522332999009F5E6A /* SwiftPortTests.swift */; };
+		4997740622332999009F5E6A /* AirportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997740522332999009F5E6A /* AirportTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		498308232258E494006C4837 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		499773FC22332999009F5E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4997740122332999009F5E6A /* SwiftPortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4997740522332999009F5E6A /* SwiftPortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPortTests.swift; sourceTree = "<group>"; };
+		4997740522332999009F5E6A /* AirportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTests.swift; sourceTree = "<group>"; };
 		4997740722332999009F5E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4997741022332B55009F5E6A /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		4997741222332C22009F5E6A /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		4997740422332999009F5E6A /* SwiftPortTests */ = {
 			isa = PBXGroup;
 			children = (
-				4997740522332999009F5E6A /* SwiftPortTests.swift */,
+				4997740522332999009F5E6A /* AirportTests.swift */,
 				4997740722332999009F5E6A /* Info.plist */,
 			);
 			path = SwiftPortTests;
@@ -171,7 +171,7 @@
 				4917D34822930E9E009BF1F5 /* Weather.swift in Sources */,
 				4917D34722930E9B009BF1F5 /* Airport.swift in Sources */,
 				4917D34622930E98009BF1F5 /* Plane.swift in Sources */,
-				4997740622332999009F5E6A /* SwiftPortTests.swift in Sources */,
+				4997740622332999009F5E6A /* AirportTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
